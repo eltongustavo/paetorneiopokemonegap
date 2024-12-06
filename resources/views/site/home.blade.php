@@ -10,7 +10,7 @@
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Regras</title>
-            <link rel="stylesheet" href="font.css">    
+            <link rel="stylesheet" href="font.css">
         </head>
         <body style="background-color: #dcdcdc;">
 
@@ -20,7 +20,7 @@
 
                 <h2 style="font-size: clamp(1.5em, 1.8em, 2.5em); border-radius: 5px;" class="p-2 text-light text-center bg-danger backrule">Esse torneio será realizado dentro dos jogos Pokémon Ultra Sun/Ultra Moon</h2>
 
-                <img class="m-4" style="margin: 5px; width: 100%;" src="{{ asset('assets/home/pokemonusum.jpg') }}" alt="pokemon USUM">
+                <img class="m-4" style="margin: 5px; width: 80%;" src="{{ asset('assets/home/pokemonusum.jpg') }}" alt="pokemon USUM">
 
                 <h2 style="font-size: clamp(1.5em, 1.8em, 2.5em); border-radius: 5px;" class="p-2 text-light bg-danger backrule rtext text-center m-3">O modelo das batalhas será VGC/Doubles no modelo do mundial de 2018</h2>
 
@@ -32,12 +32,12 @@
                     <h1 style="border-radius: 5px;" class="text-light ltext bg-danger backrule text-center">Não podem haver items repetidos</h1>
                     <h1 style="border-radius: 5px;" class="text-light ltext bg-primary backrule text-center mb-5 ">ABAIXO TODOS OS POKÉMON BANIDOS</h1>
                 </div>
-                
-                
+
+
                 <div class="row">
                     {{-- define a lista de todos os pokémons banidos --}}
                     @php
-                        define('BANIDOS', array("kangaskhan-mega","heracross-mega","metagross-mega","greninja-ash","mewtwo", "mew", "lugia", "ho-oh", "celebi", "kyogre", "groudon", "rayquaza", "jirachi", "deoxys", "dialga", "palkia", "giratina", "phione", "manaphy", "darkrai", "shaymin", "arceus", "victini", "reshiram", "zekrom", "kyurem", "keldeo", "meloetta", "genesect", "xerneas", "yveltal", "zygarde", "diancie", "hoopa", "volcanion", "cosmog", "cosmoem", "solgaleo", "lunala", "necrozma", "magearna", "marshadow"));                       
+                        define('BANIDOS', array("kangaskhan-mega","heracross-mega","metagross-mega","greninja-ash","mewtwo", "mew", "lugia", "ho-oh", "celebi", "kyogre", "groudon", "rayquaza", "jirachi", "deoxys", "dialga", "palkia", "giratina", "phione", "manaphy", "darkrai", "shaymin", "arceus", "victini", "reshiram", "zekrom", "kyurem", "keldeo", "meloetta", "genesect", "xerneas", "yveltal", "zygarde", "diancie", "hoopa", "volcanion", "cosmog", "cosmoem", "solgaleo", "lunala", "necrozma", "magearna", "marshadow"));
                     @endphp
 
                     {{-- Aqui será mostrado todos os pokémons banidos--}}
