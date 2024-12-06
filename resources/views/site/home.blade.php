@@ -20,11 +20,11 @@
 
                 <h2 style="font-size: clamp(1.5em, 1.8em, 2.5em); border-radius: 5px;" class="p-2 text-light text-center bg-danger backrule">Esse torneio será realizado dentro dos jogos Pokémon Ultra Sun/Ultra Moon</h2>
 
-                <img class="m-4" style="margin: 5px; width: 80%;" src="{{ asset('assets/home/pokemonusum.jpg') }}" alt="pokemon USUM">
+                <img class="m-4" style="margin: 5px; width: 90%;" src="{{ asset('assets/home/pokemonusum.jpg') }}" alt="pokemon USUM">
 
                 <h2 style="font-size: clamp(1.5em, 1.8em, 2.5em); border-radius: 5px;" class="p-2 text-light bg-danger backrule rtext text-center m-3">O modelo das batalhas será VGC/Doubles no modelo do mundial de 2018</h2>
 
-                <img class="m-4" style="margin: 5px; width: 100%;" src="{{ asset('assets/home/pokemonblast.jpg') }}" alt="imagem de batalha em dupla">
+                <img class="m-4" style="margin: 5px; width: 90%;" src="{{ asset('assets/home/pokemonblast.jpg') }}" alt="imagem de batalha em dupla">
 
                 <div style="width: 100%;">
                     <h1 style="border-radius: 5px;" class="text-light ltext bg-danger backrule text-center">A equipe obrigatoriamente deve conter 6 pokemons</h1>
