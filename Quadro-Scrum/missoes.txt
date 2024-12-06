@@ -1,0 +1,6 @@
+1- Atualizar nomes do banco
+2- Descrever regras de negocio do arquivo .txt, especificar onde esses arquivos ficam
+3- Descrever melhor o tutorial
+4- Criar um diagrama de sequêcia espandida
+5- Cadrastro de equipes do usuário pelo arquivo .txt é a principal situação do site
+6- refazer o caso de uso com herança
