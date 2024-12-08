@@ -11,13 +11,13 @@ class RegistrationController extends Controller
 {
     // Mostra o formulário de registro
     public function create() {
-        return view('site.registrar');
+        return view('site.cadastrar');
     }
 
     // Pega os dados do formulário do registro e faz a validação, como termino manda para o banco
     public function store(Request $request) {
-        $validator = $this->validator($request); 
-        
+        $validator = $this->validator($request);
+
         if($validator->fails()) {
             return redirect()->back()->withErrors($validator)->withInput();
         } else {
@@ -29,8 +29,8 @@ class RegistrationController extends Controller
             return redirect()->route('login.create');
         }
     }
-    
-    // Valida todos os dados e suas regras 
+
+    // Valida todos os dados e suas regras
     private function validator($request) {
         return Validator::make($request->all(), [
             'nome' => 'required|string|min:2|max:100|unique:usuarios',
