@@ -17,7 +17,7 @@
 
         <body style="background-color: #dcdcdc">
             <div class="container mt-sm-5 bg-light p-3 rounded">
-                {{-- Selecionar Login ou Registrar --}}
+                {{-- Selecionar Login ou Cadastrar --}}
                 <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link text-success" id="tab-login" data-mdb-pill-init href="{{ route('login.create') }}" role="tab"
@@ -25,7 +25,7 @@
                     </li>
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active bg-success" id="tab-register" data-mdb-pill-init href="#" role="tab"
-                        aria-controls="pills-register" aria-selected="false">Registrar</a>
+                        aria-controls="pills-register" aria-selected="false">Cadastrar</a>
                     </li>
                 </ul>
 
@@ -61,17 +61,17 @@
                             </div>
 
                             <!-- Senha input -->
-                            
+
                             <div data-mdb-input-init class="form-outline mb-4">
                                 <label class="form-label" for="loginPassword">Confirmar Senha (*)</label>
                                 <input type="password" name="confirmacaosenha" id="confirmarSenha" class="form-control" minlength="8"/>
                             </div>
 
                             <!-- Botão Submit -->
-                            <button id="submitBtn" type="submit" class="btn btn-success btn-block mb-4">Registrar-se</button>
+                            <button id="submitBtn" type="submit" class="btn btn-success btn-block mb-4">Cadastrar-se</button>
                         </form>
                         <div id="mensagem" class="mt-3"></div>
-                        
+
                     </div>
                 </div>
                 </div>

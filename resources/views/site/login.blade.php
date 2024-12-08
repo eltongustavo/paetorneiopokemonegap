@@ -18,7 +18,7 @@
         <body style="background-color: #dcdcdc">
             @yield('header')
             <div class="container mt-sm-5 bg-light p-3 rounded">
-                <!-- Escolher entre Login e Registrar -->
+                <!-- Escolher entre Login e Cadastrar -->
                 <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
                     {{-- LOGIN --}}
                     <li class="nav-item" role="presentation">
@@ -26,10 +26,10 @@
                         aria-controls="pills-login" aria-selected="true">Login</a>
                     </li>
 
-                    {{-- REGISTRAR --}}
+                    {{-- Cadastrar --}}
                     <li class="nav-item" role="presentation">
                         <a class="nav-link text-success" id="tab-register" data-mdb-pill-init href="{{ route('registration.create') }}" role="tab"
-                        aria-controls="pills-register" aria-selected="false">Registrar</a>
+                        aria-controls="pills-register" aria-selected="false">Cadastrar</a>
                     </li>
 
                 </ul>
@@ -47,7 +47,7 @@
                                 </ul>
                             </div>
                         @endif
-                        
+
                         {{-- Formulário de Login --}}
                         <form method="post" id="formulario_login" action="{{ route('login.validatorLogin') }}">
                             @csrf
