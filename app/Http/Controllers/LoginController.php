@@ -46,19 +46,11 @@ class LoginController extends Controller
             $team_data = Equipe::find(session('Name'));
             if(isset($team_data)) {
                 Session::put('Team', true);
+                return redirect()->route('equipe.validator');
             } else {
                 Session::put('Team', false);
+                return redirect()->route('equipe.index');
             }
-        }
-
-        // Validando equipe se foi registrada no banco
-        $team_data = Equipe::find(session('Name'));
-        if(isset($team_data)) {
-            Session::put('Team', true);
-            return redirect()->route('equipe.validator');
-        } else {
-            Session::put('Team', false);
-            return redirect()->route('equipe.index');
         }
     }
 
