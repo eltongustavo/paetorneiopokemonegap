@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Adm;
 use App\Models\Usuario;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -18,15 +19,21 @@ class RegistrationController extends Controller
     public function store(Request $request) {
         $validator = $this->validator($request);
 
-        if($validator->fails()) {
-            return redirect()->back()->withErrors($validator)->withInput();
+        $adm_nome = Adm::where('nome', '=', $request->nome)->exists();
+
+        if($adm_nome) {
+            return redirect()->back()->withErrors(['adm' => 'Este usuário já existe!'])->withInput();
         } else {
-            $usuario = new Usuario();
-            $usuario->nome = $request->nome;
-            $usuario->telefone = $request->telefone;
-            $usuario->senha = $request->senha;
-            $usuario->save();
-            return redirect()->route('login.create');
+            if($validator->fails()) {
+                return redirect()->back()->withErrors($validator)->withInput();
+            } else {
+                $usuario = new Usuario();
+                $usuario->nome = $request->nome;
+                $usuario->telefone = $request->telefone;
+                $usuario->senha = $request->senha;
+                $usuario->save();
+                return redirect()->route('login.create');
+            }
         }
     }
 
