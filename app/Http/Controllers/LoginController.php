@@ -36,7 +36,7 @@ class LoginController extends Controller
                 Session::put('Team', false);
             }
 
-            return redirect()->route('home.index');
+            return redirect()->route('dashboard.show');
         }
 
         // Usa os dados do login para verificar se usuário existe no banco
@@ -59,7 +59,7 @@ class LoginController extends Controller
             }
         }
 
-        return redirect()->route('home.index');
+        return redirect()->route('equipe.index');
     }
 
     // Limpa as variaveis de sessão

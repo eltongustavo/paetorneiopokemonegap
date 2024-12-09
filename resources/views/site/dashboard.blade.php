@@ -23,7 +23,7 @@
         <div class="container" style="min-height: 100vh;">
             <table class="table table-dark text-center text-light">
                 <tr class="bg-success text-center text-light">
-                    <td>Treinador</td>
+                    <td>Usuário</td>
                     <td>Pokémon 1</td>
                     <td>Pokémon 2</td>
                     <td>Pokémon 3</td>
