@@ -35,7 +35,7 @@
                     {{-- Os botões de Sair (encerrar sessão) e Criar Time --}}
                     <div class="d-flex justify-content-center align-items-center mt-3">
                         <a href="{{ route('login.logoff') }}" name='end' class="btn btn-danger mx-2">Sair</a>  
-                        <a href="{{ route('equipe.create') }}" name='end' class="btn btn-success">Criar Time</a>
+                        <a href="{{ route('equipe.create') }}" name='end' class="btn btn-success">Criar Equipe</a>
                 </div>
             </div>
         </div>
