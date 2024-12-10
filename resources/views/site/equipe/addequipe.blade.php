@@ -74,9 +74,9 @@
                 
                 <div id="container" class="row mx-0 my-3 rounded" style="box-sizing: border-box; background-color: white; border: 1px solid #ddd"></div>
                 
-                {{-- Botão de submite --}}
+                {{-- Botão de submit --}}
                 <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-success">Registrar</button>
+                    <button type="submit" class="btn btn-success">Cadastrar</button>
                 </div>
             </form>
         </div>
